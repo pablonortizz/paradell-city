@@ -6,7 +6,7 @@
         label: 'Pending approval',
         id: 'pending'
     },
-    img: './../assets/character.png',
+    img: 'public/assets/character.png',
     dateExpiry: 7,
     information: ['New information', 'Other', 'Id: 160']
 } */
