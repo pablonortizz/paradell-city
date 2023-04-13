@@ -73,6 +73,12 @@ main {
                     font-size: 16px;
                     font-family: outfit-medium;
 
+                    &::-webkit-search-cancel-button{
+                        position:relative;
+                        right:10px;
+                        filter: grayscale(1);
+                    }
+
                     &::-webkit-search-decoration {
                         -webkit-appearance: none;
                     }
@@ -133,6 +139,10 @@ main {
                 padding: 20px;
                 margin-bottom: 10px;
                 position: relative;
+
+                &.hidden {
+                    display: none;
+                }
 
                 &.red {
                     background: rgba(241, 51, 51, 0.05);

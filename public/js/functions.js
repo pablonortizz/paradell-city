@@ -11,13 +11,19 @@
     information: ['New information', 'Other', 'Id: 160']
 } */
 
+// Ejemplo de array de warrants
+
+/* 
+    let warrants = [warrant, warrant, warrant]
+*/
+
 function findElement(selector, parent = document) {
     return parent.querySelector(selector);
 }
 
-function addWarrant(data) {
+function addCard(data, container) {
     let {name, status, img, dateExpiry, information} = data;
-    const cardList = findElement('.warrants .cardList');
+    const cardList = findElement(container+' .cardList');
     const card = findElement('.cardList .card');
     const cloneCard = card.cloneNode(true);
     let informationDiv = cloneCard.querySelectorAll('.information p');
@@ -37,6 +43,26 @@ function addWarrant(data) {
     cardList.appendChild(cloneCard);
 }
 
+function addWarrant(data) {
+    addCard(data, '.warrants');
+}
+
+function addWarrants(warrants) {
+    warrants.forEach(element => {
+        addWarrant(element);
+    });
+}
+
+function addOrder(data) {
+    addCard(data, '.orders');
+}
+
+function addOrders(orders) {
+    orders.forEach(element => {
+        addOrder(element);
+    });
+}
+
 function toggleDuty() {
     const dutyState = findElement('header .duty .state');
     const dutyOn = dutyState.classList.contains('on');
@@ -52,4 +78,17 @@ function changeNameDuty(name) {
 
 function changeRangeDuty(range) {
     findElement('header .duty .range').innerHTML = range;
+}
+
+function searchCards(container) {
+    const search = findElement('#'+container+'-search');
+    const cardList = document.querySelectorAll('.'+container+' .cardList .card');
+
+    cardList.forEach(element => {
+        if (!findElement('.info', element).innerText.toLowerCase().includes(search.value.toLowerCase())) {
+            element.classList.add("hidden");
+        } else {
+            element.classList.remove("hidden");
+        }
+    });
 }
