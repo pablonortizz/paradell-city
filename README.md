@@ -4,6 +4,7 @@
 
 - [Como empezar](#getting_started)
 - [Usage](#usage)
+- [Functions](#functions)
 
 ## Como empezar <a name = "getting_started"></a>
 
@@ -20,3 +21,13 @@ npm install
 ## Usage <a name = "usage"></a>
 
 npm run dev
+
+## Functions <a name = "functions"></a>
+
+addWarrant(warrant) -- Add new warrant
+
+toggleDuty() -- Toggle On/Off duty
+
+changeNameDuty(name) -- Change name duty
+
+changeRangeDuty(range) -- Change range duty
