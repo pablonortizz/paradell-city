@@ -6,11 +6,11 @@ const sass = require('gulp-sass')(require('sass'));
 gulp.task('serve', function() {
 
   browserSync.init({
-      server: "./public"
+      server: "./"
   });
 
   gulp.watch("scss/**/*.scss", ['sass']);
-  gulp.watch("public/*.html").on('change', browserSync.reload);
+  gulp.watch("*.html").on('change', browserSync.reload);
 });
 
 // Compile sass into CSS & auto-inject into browsers
