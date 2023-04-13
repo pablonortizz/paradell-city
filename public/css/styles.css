@@ -1,0 +1,543 @@
+@font-face {
+  font-family: outfit-medium;
+  src: url("./../fonts/Outfit-Medium.ttf");
+}
+@font-face {
+  font-family: outfit-bold;
+  src: url("./../fonts/Outfit-Bold.ttf");
+}
+@font-face {
+  font-family: outfit-semibold;
+  src: url("./../fonts/Outfit-SemiBold.ttf");
+}
+div {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+h3, h4, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("./../assets/background.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  margin: 0;
+  height: 100%;
+  padding: 20px;
+  width: 100%;
+}
+
+.container {
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(150deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.05)) 1;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 102px 72px;
+  margin: 0;
+}
+
+.main-container {
+  display: inline-block;
+}
+
+header .info {
+  display: inline-block;
+  width: auto;
+}
+header .info img {
+  height: 64px;
+  margin-right: 30px;
+  width: auto;
+}
+header .info .department {
+  display: inline-block;
+  padding-top: 5px;
+  vertical-align: top;
+}
+header .info .department h3, header .info .department h4 {
+  font-family: outfit-semibold;
+  font-size: 16px;
+  margin: 0;
+}
+header .info .department h3 {
+  color: white;
+}
+header .info .department h4 {
+  color: rgba(255, 255, 255, 0.65);
+  text-transform: uppercase;
+}
+header .duty {
+  float: right;
+  background-color: rgba(255, 255, 255, 0.03);
+  padding: 9px 10px;
+}
+header .duty div {
+  display: inline-block;
+  vertical-align: top;
+}
+header .duty p {
+  font-family: outfit-medium;
+  margin: 0;
+  text-transform: uppercase;
+}
+header .duty .state {
+  padding: 9px 12px;
+  margin: 6px 0;
+}
+header .duty .state p {
+  font-size: 12px;
+  line-height: 12px;
+}
+header .duty .state.on {
+  background: rgba(101, 255, 144, 0.1);
+  border: 1px rgba(101, 255, 144, 0.25) solid;
+}
+header .duty .state.on p {
+  color: rgb(101, 255, 144);
+}
+header .duty .state.off {
+  background: rgba(255, 101, 101, 0.1);
+  border: 1px solid rgba(255, 101, 101, 0.45);
+}
+header .duty .state.off p {
+  color: #ff8686;
+}
+header .duty .data {
+  padding: 7px 0px;
+  margin: 6px 30px;
+}
+header .duty .data p {
+  display: inline;
+  font-size: 16px;
+  line-height: 16px;
+}
+header .duty .data .name {
+  color: white;
+  margin-right: 22px;
+  position: relative;
+}
+header .duty .data .name::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 155px;
+  right: -16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header .duty .data .range {
+  color: rgba(255, 255, 255, 0.65);
+}
+header .duty .actions div {
+  cursor: pointer;
+  height: 44px;
+  width: 44px;
+  position: relative;
+}
+header .duty .actions div svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+header .duty .actions .options {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid;
+  border-image-source: linear-gradient(265.93deg, rgba(255, 255, 255, 0.35) -82.05%, rgba(255, 255, 255, 0) 69.95%);
+}
+header .duty .actions .close {
+  background: rgba(255, 101, 101, 0.1);
+  border: 1px solid;
+  border-image-source: linear-gradient(265.93deg, rgba(255, 101, 101, 0.45) -82.05%, rgba(255, 101, 101, 0) 69.95%);
+}
+
+nav {
+  clear: both;
+  margin-top: 62px;
+  max-width: 280px;
+  display: inline-block;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  background-image: url("./../assets/nav_background.png");
+  width: 280px;
+  height: 110px;
+  margin-bottom: 10px;
+  list-style: none;
+  padding: 20px 24px;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+}
+nav ul li:last-child {
+  margin-bottom: 0;
+}
+nav ul li::after {
+  content: "";
+  background: linear-gradient(-45deg, transparent 33.3333333333%, rgba(255, 255, 255, 0.05), transparent 66.6666666667%) bottom right/350% 100% no-repeat;
+  transition: 0.5s linear;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+nav ul li:hover::after {
+  background-position: bottom left;
+}
+nav ul li.active {
+  background-image: url("./../assets/nav_background_active.png");
+}
+nav ul li.active .figure .background {
+  background: linear-gradient(90deg, #FFFFFF 0%, #FFFFFF 65.09%, rgba(255, 255, 255, 0.77) 79.24%, rgba(255, 255, 255, 0) 117.31%);
+}
+nav ul li.active::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 50%;
+  width: 6.5px;
+  height: 20px;
+  transform: translateY(-50%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  background-color: white;
+}
+nav ul li.active::after {
+  background: none;
+}
+nav ul li.active .figure svg {
+  color: black;
+}
+nav ul li .figure, nav ul li .info {
+  display: inline-block;
+}
+nav ul li .figure {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  vertical-align: middle;
+  background-image: url("./../assets/square_background.png");
+}
+nav ul li .figure::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.65);
+  bottom: -2px;
+  left: -2px;
+}
+nav ul li .figure::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 40px;
+  left: -5px;
+  top: 12px;
+  background: rgba(255, 255, 255, 0.35);
+}
+nav ul li .figure .background {
+  width: 74px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  background: linear-gradient(163.92deg, rgba(255, 255, 255, 0.1) 5.34%, rgba(255, 255, 255, 0) 89.63%);
+}
+nav ul li .figure svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+nav ul li .info {
+  position: relative;
+  left: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+nav ul li h4 {
+  font-family: outfit-bold;
+  text-transform: uppercase;
+  color: white;
+  font-size: 20px;
+  margin: 0;
+}
+nav ul li p {
+  font-family: outfit-semibold;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 14px;
+  margin: 0;
+}
+
+main {
+  display: inline-block;
+  margin-top: 62px;
+  width: calc(100% - 304px);
+  margin-left: 20px;
+  vertical-align: top;
+}
+main section {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 49.8%;
+  height: 710px;
+  display: inline-block;
+  padding: 35px 20px 0 30px;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+main .informationList .header {
+  position: relative;
+  height: 50px;
+}
+main .informationList .header .info {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+main .informationList .header .info svg {
+  position: relative;
+  top: -4px;
+}
+main .informationList .header .search {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+main .informationList .header .search::before {
+  content: "";
+  width: 16.5px;
+  height: 16.5px;
+  position: absolute;
+  top: 16.5px;
+  left: 16.5px;
+  background-image: url("./../assets/lupa.png");
+}
+main .informationList .header .search::after {
+  content: "";
+  width: 1px;
+  height: 22px;
+  position: absolute;
+  top: 14px;
+  left: 50px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+}
+main .informationList .header .search input {
+  height: 50px;
+  width: 300px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0) 100%);
+  padding: 14px 0 14px 65px;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 16px;
+  font-family: outfit-medium;
+}
+main .informationList .header .search input::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+main .informationList .header .search input:focus {
+  outline: transparent;
+}
+main .informationList .header .title {
+  display: inline-block;
+  margin-left: 20px;
+}
+main .informationList .header .title h4 {
+  font-family: outfit-medium;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+}
+main .informationList .header .title h3 {
+  font-family: outfit-bold;
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+}
+main .informationList .cardList {
+  margin-top: 30px;
+  position: relative;
+  height: 594px;
+  overflow: auto;
+  padding-right: 10px;
+}
+main .informationList .cardList::-webkit-scrollbar {
+  width: 2px;
+  position: absolute;
+  right: -10px;
+  top: 0;
+}
+main .informationList .cardList::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.15);
+  margin-left: 10px;
+}
+main .informationList .cardList::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+}
+main .informationList .cardList .card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  margin-bottom: 10px;
+  position: relative;
+}
+main .informationList .cardList .card.red {
+  background: rgba(241, 51, 51, 0.05);
+  border: 1px solid rgba(241, 51, 51, 0.25);
+}
+main .informationList .cardList .card.red .character {
+  border: 1px solid rgba(241, 51, 51, 0.3);
+  backdrop-filter: grayscale(30%);
+}
+main .informationList .cardList .card:last-child {
+  margin-bottom: 0;
+}
+main .informationList .cardList .card .character {
+  background-image: url("./../assets/character_background.png");
+  background-repeat: no-repeat;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 110px;
+  height: 110px;
+  display: inline-block;
+}
+main .informationList .cardList .card .info {
+  display: inline-block;
+  margin-left: 24px;
+  width: calc(100% - 140px);
+  vertical-align: top;
+  padding-top: 10px;
+}
+main .informationList .cardList .card .info h4 {
+  font-family: outfit-semibold;
+  font-size: 18px;
+  color: white;
+}
+main .informationList .cardList .card .info .information p {
+  color: rgba(255, 255, 255, 0.46);
+  font-family: outfit-semibold;
+  font-size: 14px;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  margin-right: 22px;
+}
+main .informationList .cardList .card .info .information p::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 155px;
+  right: -16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+main .informationList .cardList .card .info .information p:last-child::after {
+  display: none;
+}
+main .informationList .cardList .card .info .actions {
+  margin-top: 10px;
+}
+main .informationList .cardList .card .info .actions .status {
+  padding: 8px 13px;
+  font-family: outfit-semibold;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  width: auto;
+  display: inline-block;
+  margin-right: 20px;
+}
+main .informationList .cardList .card .info .actions .status.pending {
+  background: rgba(99, 180, 255, 0.02);
+  border: 1px solid rgba(99, 180, 255, 0.25);
+  color: #63B4FF;
+}
+main .informationList .cardList .card .info .actions .status.rejected {
+  background: rgba(241, 51, 51, 0.02);
+  border: 1px solid rgba(241, 51, 51, 0.25);
+  color: #F13333;
+}
+main .informationList .cardList .card .info .actions .action {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  box-sizing: border-box;
+  vertical-align: top;
+  position: relative;
+  cursor: pointer;
+}
+main .informationList .cardList .card .info .actions .action svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main .informationList .cardList .card .info .actions .action.approve {
+  background: rgba(101, 255, 144, 0.25);
+  border: 1px solid rgba(101, 255, 144, 0.45);
+}
+main .informationList .cardList .card .info .actions .action.reject {
+  background: rgba(255, 101, 101, 0.25);
+  border: 1px solid rgba(255, 101, 101, 0.45);
+}
+main .informationList .cardList .card .expiration {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 15px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 10px;
+  line-height: 13px;
+  font-family: outfit-semibold;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1570px) {
+  main section {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  main section:last-child {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 1060px) {
+  main .informationList .header .search input {
+    width: 260px;
+  }
+  main .informationList .cardList .card .expiration {
+    bottom: auto;
+    top: 0;
+  }
+}

@@ -1,0 +1,139 @@
+header {
+    .info {
+        display: inline-block;
+        width: auto;
+
+        img {
+            height: 64px;
+            margin-right: 30px;
+            width: auto;
+        }
+
+        .department {
+            display: inline-block;
+            padding-top: 5px;
+            vertical-align: top;
+
+            h3, h4 {
+                font-family: outfit-semibold;
+                font-size: 16px;
+                margin: 0;
+            }
+
+            h3 {
+                color: white;
+            }
+
+            h4 {
+                color: rgba(255, 255, 255, 0.65);
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .duty {
+        float: right;
+        background-color: rgba(255, 255, 255, 0.03);
+        padding: 9px 10px;
+
+        div {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        p {
+            font-family: outfit-medium;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .state {
+            padding: 9px 12px;
+            margin: 6px 0;
+
+            p {
+                font-size: 12px;
+                line-height: 12px;
+            }
+
+            &.on {
+                background: rgba(101, 255, 144, 0.1);
+                border: 1px rgba(101, 255, 144, 0.25) solid;
+
+                p {
+                    color: rgba(101, 255, 144, 1);
+                }
+            }
+
+            &.off {
+                background: rgba(255, 101, 101, 0.1);
+                border: 1px solid rgba(255, 101, 101, 0.45);
+
+                p {
+                    color: #ff8686;
+                }
+            }
+        }
+
+        .data {
+            padding: 7px 0px;
+            margin: 6px 30px;
+
+            p {
+                display: inline;
+                font-size: 16px;
+                line-height: 16px;
+            }
+
+            .name {
+                color: white;
+                margin-right: 22px;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    width: 6px;
+                    height: 6px;
+                    position: absolute;
+                    background: rgba(255, 255, 255, 0.35);
+                    border-radius: 155px;
+                    right: -16px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+
+            .range {
+                color: rgba(255, 255, 255, 0.65);
+            }
+        }
+
+        .actions {
+            div {
+                cursor: pointer;
+                height: 44px;
+                width: 44px;
+                position: relative;
+
+                svg {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            .options {
+                background: rgba(255, 255, 255, 0.1);
+                border: 1px solid;
+                border-image-source: linear-gradient(265.93deg, rgba(255, 255, 255, 0.35) -82.05%, rgba(255, 255, 255, 0) 69.95%);
+            }
+
+            .close {
+                background: rgba(255, 101, 101, 0.1);
+                border: 1px solid;
+                border-image-source: linear-gradient(265.93deg, rgba(255, 101, 101, 0.45) -82.05%, rgba(255, 101, 101, 0) 69.95%);
+            }
+        }
+    }
+}
