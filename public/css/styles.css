@@ -19,6 +19,7 @@ html {
   margin: 0;
   padding: 0;
   width: 100%;
+  height: 100%;
 }
 
 h3, h4, p {
@@ -34,7 +35,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   height: 100%;
-  padding: 18px;
+  padding: 0.94%;
   width: 100%;
 }
 
@@ -46,34 +47,38 @@ body {
   height: 100%;
   width: 100%;
   position: relative;
-  padding: 102px 72px;
+  padding: 5.41% 3.82%;
   margin: 0;
 }
 
 .main-container {
   display: inline-block;
+  height: 92.335%;
+  width: 100%;
 }
 
 header {
-  height: 64px;
+  height: 7.66%;
 }
 header .info {
   display: inline-block;
-  width: auto;
+  width: 20%;
+  height: 100%;
 }
 header .info img {
-  height: 64px;
-  margin-right: 30px;
+  height: 100%;
+  margin-right: 8.64%;
   width: auto;
 }
 header .info .department {
   display: inline-block;
-  padding-top: 5px;
+  padding-top: 1.45%;
   vertical-align: top;
+  height: 100%;
 }
 header .info .department h3, header .info .department h4 {
   font-family: outfit-semibold;
-  font-size: 16px;
+  font-size: 0.83vw;
   margin: 0;
 }
 header .info .department h3 {
@@ -86,7 +91,10 @@ header .info .department h4 {
 header .duty {
   float: right;
   background-color: rgba(255, 255, 255, 0.03);
-  padding: 9px 10px;
+  padding: 0.52% 0.58%;
+  height: 100%;
+  box-sizing: border-box;
+  width: 27.78%;
 }
 header .duty div {
   display: inline-block;
@@ -98,12 +106,13 @@ header .duty p {
   text-transform: uppercase;
 }
 header .duty .state {
-  padding: 9px 12px;
-  margin: 6px 0;
+  padding: 2.15% 2.87%;
+  margin: 1.43% 0;
+  width: 11.75%;
 }
 header .duty .state p {
-  font-size: 12px;
-  line-height: 12px;
+  font-size: 0.62vw;
+  line-height: 0.62vw;
 }
 header .duty .state.on {
   background: rgba(101, 255, 144, 0.1);
@@ -120,37 +129,43 @@ header .duty .state.off p {
   color: #ff8686;
 }
 header .duty .data {
-  padding: 7px 0px;
-  margin: 6px 30px;
+  padding: 1.58% 0px;
+  margin: 1.35% 6.75%;
+  width: 44.9%;
 }
 header .duty .data p {
   display: inline;
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 0.83vw;
+  line-height: 0.83vw;
 }
 header .duty .data .name {
   color: white;
-  margin-right: 22px;
+  margin-right: 11%;
   position: relative;
 }
 header .duty .data .name::after {
   content: "";
-  width: 6px;
-  height: 6px;
+  width: 7.5%;
+  height: 30%;
   position: absolute;
   background: rgba(255, 255, 255, 0.35);
   border-radius: 155px;
-  right: -16px;
+  right: -19%;
   top: 50%;
   transform: translateY(-50%);
 }
 header .duty .data .range {
   color: rgba(255, 255, 255, 0.65);
 }
+header .duty .actions {
+  height: 100%;
+  width: 21%;
+}
 header .duty .actions div {
   cursor: pointer;
-  height: 44px;
-  width: 44px;
+  box-sizing: border-box;
+  height: 100%;
+  width: 47%;
   position: relative;
 }
 header .duty .actions div svg {
@@ -158,6 +173,8 @@ header .duty .actions div svg {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  width: 41%;
+  height: 41%;
 }
 header .duty .actions .options {
   background: rgba(255, 255, 255, 0.1);
@@ -169,24 +186,31 @@ header .duty .actions .close {
   border: 1px solid;
   border-image-source: linear-gradient(265.93deg, rgba(255, 101, 101, 0.45) -82.05%, rgba(255, 101, 101, 0) 69.95%);
 }
+header .duty .actions .close svg {
+  width: 32%;
+  height: 32%;
+}
 
 nav {
   clear: both;
-  margin-top: 62px;
-  max-width: 280px;
+  margin-top: 3.57%;
+  width: 16.13%;
   display: inline-block;
+  height: 92%;
 }
 nav ul {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 nav ul li {
   background-image: url("./../assets/nav_background.png");
-  width: 280px;
-  height: 110px;
-  margin-bottom: 10px;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 15.5%;
+  margin-bottom: 3.57%;
   list-style: none;
-  padding: 20px 24px;
+  padding: 7.145% 8.575%;
   box-sizing: border-box;
   cursor: pointer;
   position: relative;
@@ -216,10 +240,10 @@ nav ul li.active .figure .background {
 nav ul li.active::before {
   content: "";
   position: absolute;
-  left: -5px;
+  left: -2%;
   top: 50%;
-  width: 6.5px;
-  height: 20px;
+  width: 2.325%;
+  height: 18.17%;
   transform: translateY(-50%);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   background-color: white;
@@ -229,41 +253,44 @@ nav ul li.active::after {
 }
 nav ul li.active .figure svg {
   color: black;
+  width: 31.45%;
+  height: 31.45%;
 }
 nav ul li .figure, nav ul li .info {
   display: inline-block;
 }
 nav ul li .figure {
   position: relative;
-  width: 70px;
-  height: 70px;
+  width: 30.175%;
+  height: 99.9%;
   vertical-align: middle;
   background-image: url("./../assets/square_background.png");
+  background-size: 100% 100%;
 }
 nav ul li .figure::after {
   content: "";
   position: absolute;
-  width: 8px;
-  height: 8px;
+  width: 11.45%;
+  height: 11.45%;
   background: rgba(255, 255, 255, 0.65);
-  bottom: -2px;
-  left: -2px;
+  bottom: -2%;
+  left: -3%;
 }
 nav ul li .figure::before {
   content: "";
   position: absolute;
-  width: 1px;
-  height: 40px;
-  left: -5px;
-  top: 12px;
+  width: 1.45%;
+  height: 57.15%;
+  left: -7%;
+  top: 16%;
   background: rgba(255, 255, 255, 0.35);
 }
 nav ul li .figure .background {
-  width: 74px;
-  height: 50px;
+  width: 105.72%;
+  height: 71.45%;
   position: absolute;
-  top: 10px;
-  left: 8px;
+  top: 14%;
+  left: 11%;
   background: linear-gradient(163.92deg, rgba(255, 255, 255, 0.1) 5.34%, rgba(255, 255, 255, 0) 89.63%);
 }
 nav ul li .figure svg {
@@ -272,10 +299,12 @@ nav ul li .figure svg {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  width: 37.15%;
+  height: 37.15%;
 }
 nav ul li .info {
   position: relative;
-  left: 28px;
+  left: 12%;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -283,89 +312,97 @@ nav ul li h4 {
   font-family: outfit-bold;
   text-transform: uppercase;
   color: white;
-  font-size: 20px;
+  font-size: 1.04vw;
   margin: 0;
 }
 nav ul li p {
   font-family: outfit-semibold;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.45);
-  font-size: 14px;
+  font-size: 0.73vw;
   margin: 0;
 }
 
 main {
   display: inline-block;
-  margin-top: 62px;
-  width: calc(100% - 304px);
-  margin-left: 20px;
+  margin-top: 3.57%;
+  width: 82.3%;
+  margin-left: 1.15%;
   vertical-align: top;
+  height: 92%;
 }
 main section {
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.1);
   width: 49.8%;
-  height: 710px;
+  height: 100%;
   display: inline-block;
-  padding: 35px 20px 0 30px;
+  padding: 2.445% 1.397% 0 2.095%;
   box-sizing: border-box;
   vertical-align: top;
+  overflow: hidden;
 }
 main .informationList .header {
   position: relative;
-  height: 50px;
+  height: 7.428%;
 }
 main .informationList .header .info {
   position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+  height: 100%;
+  width: 24.1%;
 }
 main .informationList .header .info svg {
   position: relative;
-  top: -4px;
+  top: -8%;
+  width: 13.87%;
+  display: inline-block;
+  height: 53.24%;
 }
 main .informationList .header .search {
   position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
+  right: 2%;
+  height: 100%;
+  width: 45.377%;
 }
 main .informationList .header .search::before {
   content: "";
-  width: 16.5px;
-  height: 16.5px;
+  width: 5.5%;
+  height: 33%;
   position: absolute;
-  top: 16.5px;
-  left: 16.5px;
+  top: 33%;
+  left: 5.5%;
   background-image: url("./../assets/lupa.png");
+  background-size: 100% 100%;
 }
 main .informationList .header .search::after {
   content: "";
-  width: 1px;
-  height: 22px;
+  width: 0.335%;
+  height: 44%;
   position: absolute;
-  top: 14px;
-  left: 50px;
+  top: 28%;
+  left: 17%;
   background: rgba(255, 255, 255, 0.25);
   border-radius: 8px;
 }
 main .informationList .header .search input {
-  height: 50px;
-  width: 300px;
+  height: 100%;
+  width: 100%;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   border: 1px solid rgba(255, 255, 255, 0.15);
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0) 100%);
-  padding: 14px 0 14px 65px;
+  padding: 4.67% 0 4.67% 21.67%;
   color: rgba(255, 255, 255, 0.65);
-  font-size: 16px;
+  font-size: 0.83vw;
   font-family: outfit-medium;
 }
 main .informationList .header .search input::-webkit-search-cancel-button {
   position: relative;
-  right: 10px;
+  right: 4%;
   filter: grayscale(1);
 }
 main .informationList .header .search input::-webkit-search-decoration {
@@ -376,26 +413,32 @@ main .informationList .header .search input:focus {
 }
 main .informationList .header .title {
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 12.61%;
+  height: 100%;
+  margin-top: 2.5%;
 }
 main .informationList .header .title h4 {
   font-family: outfit-medium;
-  font-size: 14px;
+  font-size: 0.73vw;
   color: rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
 }
 main .informationList .header .title h3 {
   font-family: outfit-bold;
-  font-size: 20px;
+  font-size: 1.04vw;
   color: white;
   text-transform: uppercase;
 }
+main .informationList.orders .header .info svg {
+  width: 16.39%;
+  height: 44%;
+}
 main .informationList .cardList {
-  margin-top: 30px;
+  margin-top: 4.538%;
   position: relative;
-  height: 594px;
+  height: 88.232%;
   overflow: auto;
-  padding-right: 10px;
+  padding-right: 1.514%;
 }
 main .informationList .cardList::-webkit-scrollbar {
   width: 2px;
@@ -414,9 +457,12 @@ main .informationList .cardList::-webkit-scrollbar-thumb {
 main .informationList .cardList .card {
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  margin-bottom: 10px;
+  padding: 3.083%;
+  margin-bottom: 1.542%;
   position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  height: 26.431%;
 }
 main .informationList .cardList .card.hidden {
   display: none;
@@ -436,39 +482,48 @@ main .informationList .cardList .card .character {
   background-image: url("./../assets/character_background.png");
   background-repeat: no-repeat;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  width: 110px;
-  height: 110px;
+  width: 18.12%;
+  height: 95.66%;
+  background-size: 100% 100%;
   display: inline-block;
+}
+main .informationList .cardList .card .character img {
+  width: 100%;
+  height: 100%;
 }
 main .informationList .cardList .card .info {
   display: inline-block;
-  margin-left: 24px;
-  width: calc(100% - 140px);
+  margin-left: 3.953%;
+  width: 76.53%;
   vertical-align: top;
-  padding-top: 10px;
+  padding-top: 1.648%;
+  height: 72.18%;
 }
 main .informationList .cardList .card .info h4 {
   font-family: outfit-semibold;
-  font-size: 18px;
+  font-size: 0.94vw;
   color: white;
+}
+main .informationList .cardList .card .info .information {
+  width: 100%;
 }
 main .informationList .cardList .card .info .information p {
   color: rgba(255, 255, 255, 0.46);
   font-family: outfit-semibold;
-  font-size: 14px;
+  font-size: 0.73vw;
   text-transform: uppercase;
   display: inline-block;
   position: relative;
-  margin-right: 22px;
+  margin-right: 4.71%;
 }
 main .informationList .cardList .card .info .information p::after {
   content: "";
-  width: 6px;
-  height: 6px;
+  width: 4.32%;
+  height: 33.4%;
   position: absolute;
   background: rgba(255, 255, 255, 0.35);
   border-radius: 155px;
-  right: -16px;
+  right: -11.5%;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -476,17 +531,19 @@ main .informationList .cardList .card .info .information p:last-child::after {
   display: none;
 }
 main .informationList .cardList .card .info .actions {
-  margin-top: 10px;
+  margin-top: 2.142%;
+  width: 100%;
+  height: 38.57%;
 }
 main .informationList .cardList .card .info .actions .status {
-  padding: 8px 13px;
+  padding: 1.715% 2.785%;
   font-family: outfit-semibold;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 0.63vw;
+  line-height: 0.75vw;
   text-transform: uppercase;
   width: auto;
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 4.284%;
 }
 main .informationList .cardList .card .info .actions .status.pending {
   background: rgba(99, 180, 255, 0.02);
@@ -500,8 +557,8 @@ main .informationList .cardList .card .info .actions .status.rejected {
 }
 main .informationList .cardList .card .info .actions .action {
   display: inline-block;
-  width: 32px;
-  height: 32px;
+  width: 6.852%;
+  height: 100%;
   box-sizing: border-box;
   vertical-align: top;
   position: relative;
@@ -512,6 +569,8 @@ main .informationList .cardList .card .info .actions .action svg {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 46.7%;
+  height: 36.7%;
 }
 main .informationList .cardList .card .info .actions .action.approve {
   background: rgba(101, 255, 144, 0.25);
@@ -523,32 +582,12 @@ main .informationList .cardList .card .info .actions .action.reject {
 }
 main .informationList .cardList .card .expiration {
   background: rgba(255, 255, 255, 0.1);
-  padding: 8px 15px;
+  padding: 1.237% 2.32%;
   color: rgba(255, 255, 255, 0.9);
-  font-size: 10px;
-  line-height: 13px;
+  font-size: 0.52vw;
   font-family: outfit-semibold;
   position: absolute;
   bottom: 0;
   right: 0;
   text-transform: uppercase;
-}
-
-@media (max-width: 1570px) {
-  main section {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  main section:last-child {
-    margin-bottom: 0;
-  }
-}
-@media (max-width: 1060px) {
-  main .informationList .header .search input {
-    width: 260px;
-  }
-  main .informationList .cardList .card .expiration {
-    bottom: auto;
-    top: 0;
-  }
 }

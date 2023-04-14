@@ -1,20 +1,23 @@
 nav {
     clear: both;
-    margin-top: 62px;
-    max-width: 280px;
+    margin-top: 3.57%;
+    width: 16.13%;
     display: inline-block;
+    height: 92%;
 
     ul {
         margin: 0;
         padding: 0;
+        height: 100%;
 
         li {
             background-image: url('./../assets/nav_background.png');
-            width: 280px;
-            height: 110px;
-            margin-bottom: 10px;
+            background-size: 100% 100%;
+            width: 100%;
+            height: 15.5%;
+            margin-bottom: 3.57%;
             list-style: none;
-            padding: 20px 24px;
+            padding: 7.145% 8.575%;
             box-sizing: border-box;
             cursor: pointer;
             position: relative;
@@ -52,10 +55,10 @@ nav {
                 &::before {
                     content: '';
                     position: absolute;
-                    left: -5px;
+                    left: -2%;
                     top: 50%;
-                    width: 6.5px;
-                    height: 20px;
+                    width: 2.325%;
+                    height: 18.17%;
                     transform: translateY(-50%);
                     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
                     background-color: white;
@@ -67,6 +70,8 @@ nav {
 
                 .figure svg {
                     color: black;
+                    width: 31.45%;
+                    height: 31.45%;
                 }
             }
 
@@ -76,37 +81,38 @@ nav {
 
             .figure {
                 position: relative;
-                width: 70px;
-                height: 70px;
+                width: 30.175%;
+                height: 99.9%;
                 vertical-align: middle;
                 background-image: url('./../assets/square_background.png');
+                background-size: 100% 100%;
 
                 &::after {
                     content: '';
                     position: absolute;
-                    width: 8px;
-                    height: 8px;
+                    width: 11.45%;
+                    height: 11.45%;
                     background: rgba(255, 255, 255, 0.65);
-                    bottom: -2px;
-                    left: -2px;
+                    bottom: -2%;
+                    left: -3%;
                 }
 
                 &::before {
                     content: '';
                     position: absolute;
-                    width: 1px;
-                    height: 40px;
-                    left: -5px;
-                    top: 12px;
+                    width: 1.45%;
+                    height: 57.15%;
+                    left: -7%;
+                    top: 16%;
                     background: rgba(255, 255, 255, 0.35);
                 }
 
                 .background {
-                    width: 74px;
-                    height: 50px;
+                    width: 105.72%;
+                    height: 71.45%;
                     position: absolute;
-                    top: 10px;
-                    left: 8px;
+                    top: 14%;
+                    left: 11%;
                     background: linear-gradient(163.92deg, rgba(255, 255, 255, 0.1) 5.34%, rgba(255, 255, 255, 0) 89.63%);
                 }
 
@@ -116,12 +122,14 @@ nav {
                     left: 50%;
                     transform: translate(-50%, -50%);
                     color: white;
+                    width: 37.15%;
+                    height: 37.15%;
                 }
             }
 
             .info {
                 position: relative;
-                left: 28px;
+                left: 12%;
                 top: 50%;
                 transform: translateY(-50%);
             }
@@ -130,7 +138,7 @@ nav {
                 font-family: outfit-bold;
                 text-transform: uppercase;
                 color: white;
-                font-size: 20px;
+                font-size: 1.04vw;
                 margin: 0;
             }
 
@@ -138,7 +146,7 @@ nav {
                 font-family: outfit-semibold;
                 text-transform: uppercase;
                 color: rgba(255, 255, 255, 0.45);
-                font-size: 14px;
+                font-size: 0.73vw;
                 margin: 0;
             }
         }

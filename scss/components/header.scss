@@ -1,24 +1,26 @@
 header {
-    height: 64px;
+    height: 7.66%;
     
     .info {
         display: inline-block;
-        width: auto;
+        width: 20%;
+        height: 100%;
 
         img {
-            height: 64px;
-            margin-right: 30px;
+            height: 100%;
+            margin-right: 8.64%;
             width: auto;
         }
 
         .department {
             display: inline-block;
-            padding-top: 5px;
+            padding-top: 1.45%;
             vertical-align: top;
+            height: 100%;
 
             h3, h4 {
                 font-family: outfit-semibold;
-                font-size: 16px;
+                font-size: 0.83vw;
                 margin: 0;
             }
 
@@ -36,7 +38,10 @@ header {
     .duty {
         float: right;
         background-color: rgba(255, 255, 255, 0.03);
-        padding: 9px 10px;
+        padding: 0.52% 0.58%;
+        height: 100%;
+        box-sizing: border-box;
+        width: 27.78%;
 
         div {
             display: inline-block;
@@ -50,12 +55,13 @@ header {
         }
 
         .state {
-            padding: 9px 12px;
-            margin: 6px 0;
+            padding: 2.15% 2.87%;
+            margin: 1.43% 0;
+            width: 11.75%;
 
             p {
-                font-size: 12px;
-                line-height: 12px;
+                font-size: 0.62vw;
+                line-height: 0.62vw;
             }
 
             &.on {
@@ -78,28 +84,29 @@ header {
         }
 
         .data {
-            padding: 7px 0px;
-            margin: 6px 30px;
+            padding: 1.58% 0px;
+            margin: 1.35% 6.75%;
+            width: 44.9%;
 
             p {
                 display: inline;
-                font-size: 16px;
-                line-height: 16px;
+                font-size: 0.83vw;
+                line-height: 0.83vw;
             }
 
             .name {
                 color: white;
-                margin-right: 22px;
+                margin-right: 11%;
                 position: relative;
 
                 &::after {
                     content: '';
-                    width: 6px;
-                    height: 6px;
+                    width: 7.5%;
+                    height: 30%;
                     position: absolute;
                     background: rgba(255, 255, 255, 0.35);
                     border-radius: 155px;
-                    right: -16px;
+                    right: -19%;
                     top: 50%;
                     transform: translateY(-50%);
                 }
@@ -111,10 +118,14 @@ header {
         }
 
         .actions {
+            height: 100%;
+            width: 21%;
+
             div {
                 cursor: pointer;
-                height: 44px;
-                width: 44px;
+                box-sizing: border-box;
+                height: 100%;
+                width: 47%;
                 position: relative;
 
                 svg {
@@ -122,6 +133,8 @@ header {
                     left: 50%;
                     top: 50%;
                     transform: translate(-50%, -50%);
+                    width: 41%;
+                    height: 41%;
                 }
             }
 
@@ -135,6 +148,11 @@ header {
                 background: rgba(255, 101, 101, 0.1);
                 border: 1px solid;
                 border-image-source: linear-gradient(265.93deg, rgba(255, 101, 101, 0.45) -82.05%, rgba(255, 101, 101, 0) 69.95%);
+
+                svg {
+                    width: 32%;
+                    height: 32%;
+                }
             }
         }
     }
