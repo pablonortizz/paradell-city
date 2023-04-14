@@ -313,3 +313,23 @@ main {
         }
     }
 }
+
+@media (max-width: 1365px) {
+    main {
+        width: 82.2%;
+
+        section {
+            width: 49.7%;
+        }
+
+        .informationList {
+            .header .info {
+                width: 24.6%;
+            }
+
+            .cardList .card .info {
+                width: 76%;
+            }
+        }
+    }
+}

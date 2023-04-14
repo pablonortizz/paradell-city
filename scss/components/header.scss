@@ -157,3 +157,20 @@ header {
         }
     }
 }
+
+@media (max-width: 1365px) {
+    header{
+        .duty {
+            width: 28%;
+
+            .data {
+                padding: 0;
+                width: 43.9%;
+            }
+
+            .actions div{
+                width: 46.1%;
+            }
+        }
+    }
+}

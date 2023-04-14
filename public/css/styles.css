@@ -191,6 +191,18 @@ header .duty .actions .close svg {
   height: 32%;
 }
 
+@media (max-width: 1365px) {
+  header .duty {
+    width: 28%;
+  }
+  header .duty .data {
+    padding: 0;
+    width: 43.9%;
+  }
+  header .duty .actions div {
+    width: 46.1%;
+  }
+}
 nav {
   clear: both;
   margin-top: 3.57%;
@@ -590,4 +602,19 @@ main .informationList .cardList .card .expiration {
   bottom: 0;
   right: 0;
   text-transform: uppercase;
+}
+
+@media (max-width: 1365px) {
+  main {
+    width: 82.2%;
+  }
+  main section {
+    width: 49.7%;
+  }
+  main .informationList .header .info {
+    width: 24.6%;
+  }
+  main .informationList .cardList .card .info {
+    width: 76%;
+  }
 }
